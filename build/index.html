@@ -41,14 +41,14 @@ document.form1.ausgabe.value = geheim;
 
 <body>
   <div class="container-fluid">
-<form name="form1" method="post" action="">
+<form class="form-inline" name="form1" method="post" action="">
 <p>Klartext in Großbuchstaben</p>
 <p>
 <textarea rows="15" cols="50" name="eingabe"></textarea>
 </p>
 <p>Schlüssel, geben sie eine Zahl zwischen 0 und 25 ein:</p>
 <p>
-<input type="text" name="key" /><input type="button" onclick="los()" value="verschlüsseln">
+<input class="form-control" type="text" name="key" /><input class="btn btn-primary" type="button" onclick="los()" value="verschlüsseln">
 </p>
 <p>Verschl&uuml;sselt:</p>
 <p>
