@@ -3,7 +3,7 @@
 
 <head>
 <title>Entschl&uuml;sseln</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script type="text/javascript">
 function los() {
 var eingabe = document.form1.eingabe.value;
@@ -24,20 +24,17 @@ document.form1.ausgabe.value = geheim;
 
 <body>
 <form name="form1" method="post" action="">
-<p>Klartext in GroÃbuchstaben</p>
+<p>Klartext in Großbuchstaben</p>
 <p>
 <textarea rows="15" cols="50" name="eingabe"></textarea>
 </p>
-<p>SchlÃ¼ssel, geben sie eine Zahl zwischen 0 und 25 ein:</p>
+<p>Schlüssel, geben sie eine Zahl zwischen 0 und 25 ein:</p>
 <p>
-<input type="text" name="key" />
+<input type="text" name="key" /><input type="button" onclick="los()" value="verschlüsseln">
 </p>
 <p>Verschl&uuml;sselt:</p>
 <p>
 <textarea rows="15" cols="50" name="ausgabe"></textarea>
-</p>
-<p>
-<input type="button" onclick="los()" value="verschlÃ¼sseln">
 </p>
 </form>
 </body>
