@@ -19,7 +19,7 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-<script type="text/javascript">
+<script>
 navigator.serviceWorker.register('/service-worker.js');  
   
 function los() {
@@ -40,11 +40,11 @@ document.form1.ausgabe.value = geheim;
 </head>
 
 <body>
-  <div class="container-fluid">
-<form class="form-inline" name="form1" method="post" action="">
+  <div class="container">
+<form  name="form1" method="post" action="">
 <p>Klartext in Großbuchstaben</p>
 <p>
-<textarea rows="15" cols="50" name="eingabe"></textarea>
+<input class="form-control" type="text"  name="eingabe"></textarea>
 </p>
 <p>Schlüssel, geben sie eine Zahl zwischen 0 und 25 ein:</p>
 <p>
@@ -52,7 +52,7 @@ document.form1.ausgabe.value = geheim;
 </p>
 <p>Verschl&uuml;sselt:</p>
 <p>
-<textarea rows="15" cols="50" name="ausgabe"></textarea>
+<input class="form-control" type="text" name="ausgabe"></textarea>
 </p>
 </form>
   </div>
